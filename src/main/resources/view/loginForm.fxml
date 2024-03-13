@@ -8,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="409.0" prefWidth="600.0" style="-fx-background-radius: 35;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.loginFormController">
+<AnchorPane fx:id="rootNode" prefHeight="409.0" prefWidth="600.0" style="-fx-background-radius: 35;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.loginFormController">
    <children>
       <ImageView fitHeight="412.0" fitWidth="409.0" layoutX="-65.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,8 +22,8 @@
                   <Font name="Arial Black" size="34.0" />
                </font>
             </Text>
-            <TextField fx:id="txtUsername" layoutX="20.0" layoutY="111.0" onAction="#txtUsernameOnAction" prefHeight="35.0" prefWidth="255.0" />
-            <TextField fx:id="txtPassword" layoutX="20.0" layoutY="177.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="255.0" />
+            <TextField fx:id="txtUsername" layoutX="20.0" layoutY="111.0" onAction="#txtUsernameOnAction" prefHeight="35.0" prefWidth="255.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="txtPassword" layoutX="20.0" layoutY="177.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="255.0" style="-fx-background-radius: 10;" />
             <Text layoutX="20.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="70.61376953125">
                <font>
                   <Font size="15.0" />

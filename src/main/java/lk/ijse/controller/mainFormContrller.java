@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-public class dashboardFormContrller {
+public class mainFormContrller {
 
     @FXML
     private JFXButton btnBooks;
@@ -27,6 +27,9 @@ public class dashboardFormContrller {
 
     @FXML
     private AnchorPane root;
+
+    @FXML
+    private AnchorPane rootNode;
 
     @FXML
     void btnBooksOnAction(ActionEvent event) {

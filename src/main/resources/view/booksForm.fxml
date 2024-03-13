@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.controller.booksFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="543.0" prefWidth="538.0" style="-fx-background-color: #c3c8db; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.booksFormController">
+   <children>
+      <Line endX="410.0" layoutX="115.0" layoutY="39.0" startX="-100.0" />
+      <Text layoutX="18.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Books">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id" wrappingWidth="40.24348831176758">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <TextField layoutX="90.0" layoutY="65.0" prefHeight="13.0" prefWidth="152.0" />
+      <TextField layoutX="15.0" layoutY="64.0" prefHeight="26.0" prefWidth="60.0" />
+   </children>
 </AnchorPane>

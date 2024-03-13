@@ -1,59 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="lk.ijse.controller.dashboardFormController"
+            prefHeight="400.0" prefWidth="600.0">
 
-<AnchorPane prefHeight="553.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.dashboardFormContrller">
-   <children>
-      <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="543.0" prefWidth="173.0" style="-fx-background-color: #c3c8db; -fx-background-radius: 10;">
-         <children>
-            <JFXButton fx:id="btnDashboard" layoutX="11.0" layoutY="89.0" onAction="#btnDashboardOnAction" prefHeight="33.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #a29bfe;" text="Dashboard" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btnCustomer" layoutX="11.0" layoutY="150.0" onAction="#btnCustomerOnAction" prefHeight="33.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #a29bfe;" text="Customer" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btnBooks" layoutX="11.0" layoutY="210.0" onAction="#btnBooksOnAction" prefHeight="33.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #a29bfe;" text="Books" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btnRentBooks" layoutX="10.0" layoutY="270.0" onAction="#btnRentBooksOnAction" prefHeight="33.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #a29bfe;" text="Rent Books" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btnBranchers" layoutX="10.0" layoutY="330.0" onAction="#btnBranchesOnAction" prefHeight="33.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #a29bfe;" text="Branches" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </JFXButton>
-            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="104.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/bIcon.png" />
-               </image>
-            </ImageView>
-            <Text layoutX="22.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Worm">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </Text>
-            <JFXButton fx:id="btnLogout" layoutX="60.0" layoutY="521.0" onAction="#btnLogoutOnAction" prefHeight="18.0" prefWidth="48.0" style="-fx-background-radius: 5; -fx-background-color: #a29bfe;" text="Log Out" textFill="#393636">
-               <font>
-                  <Font name="System Bold" size="7.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="root" layoutX="183.0" layoutY="6.0" prefHeight="543.0" prefWidth="538.0" style="-fx-background-color: #c3c8db; -fx-background-radius: 10;" />
-   </children>
 </AnchorPane>
