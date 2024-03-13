@@ -3,7 +3,11 @@ package lk.ijse.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class mainFormContrller {
 
@@ -32,8 +36,10 @@ public class mainFormContrller {
     private AnchorPane rootNode;
 
     @FXML
-    void btnBooksOnAction(ActionEvent event) {
-
+    void btnBooksOnAction(ActionEvent event) throws IOException {
+        Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/booksForm.fxml"));
+        this.root.getChildren().clear();
+        this.root.getChildren().add(rootNode);
     }
 
     @FXML
