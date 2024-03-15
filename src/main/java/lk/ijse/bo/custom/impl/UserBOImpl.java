@@ -21,19 +21,19 @@ public class UserBOImpl implements UserBO {
         List<UserDTO> allUseres= new ArrayList<>();
         List<User> all = userDAO.getAll();
         for (User user : all) {
-            allUseres.add(new UserDTO(user.getId(), user.getUsername(), user.getPassword()));
+            allUseres.add(new UserDTO(user.getId(), user.getUsername(), user.getPhoneno(),user.getEmail(),user.getPassword()));
         }
         return allUseres;
     }
 
     @Override
     public boolean addUser(UserDTO dto) throws Exception {
-        return userDAO.add(new User(dto.getId(),dto.getUsername(), dto.getPassword()));
+        return userDAO.add(new User(dto.getId(),dto.getUsername(), dto.getPhoneno(),dto.getEmail(),dto.getPassword()));
     }
 
     @Override
     public boolean updateUser(UserDTO dto) throws Exception {
-        return userDAO.update(new User(dto.getId(),dto.getUsername(), dto.getPassword()));
+        return userDAO.update(new User(dto.getId(),dto.getUsername(), dto.getPhoneno(),dto.getEmail(),dto.getPassword()));
     }
 
 
@@ -43,12 +43,7 @@ public class UserBOImpl implements UserBO {
     }
 
     public UserDTO search(String id) throws Exception {
-        User user = userDAO.search(id);
-        if (user != null) {
-            return new UserDTO( user.getId(),user.getUsername(), user.getPassword());
-        } else {
-            return null;
-        }
+        return null;
     }
 
 
