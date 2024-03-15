@@ -41,11 +41,13 @@ public class BranchBOImpl implements BranchBO {
     public boolean deleteBranch(String id) throws Exception {
         return branchDAO.delete(id);
     }
-
-    @Override
     public BranchDTO search(String id) throws Exception {
-        return null;
+        Branch branch = branchDAO.search(id);
+        if (branch != null) {
+            return new BranchDTO(branch.getId(), branch.getLocation(), branch.getEmail(), branch.getMobile());
+        } else {
+            return null;
+        }
     }
-
 
 }
