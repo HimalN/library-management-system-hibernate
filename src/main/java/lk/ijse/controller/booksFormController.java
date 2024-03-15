@@ -1,14 +1,23 @@
 package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXComboBox;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.bo.BOFactory;
+import lk.ijse.bo.custom.BookBO;
+import lk.ijse.bo.custom.BranchBO;
+import lk.ijse.dto.BookDTO;
+import lk.ijse.dto.BranchDTO;
+import lk.ijse.dto.tm.BookTM;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 
 public class booksFormController {
@@ -53,7 +62,7 @@ public class booksFormController {
     private AnchorPane root;
 
     @FXML
-    private TableView<?> tblBooks;
+    private TableView<BookTM> tblBooks;
 
     @FXML
     private TextField txtAuthor;
@@ -72,6 +81,23 @@ public class booksFormController {
 
     @FXML
     private TextField txtSearch;
+    @FXML
+    private Label lblBranchName;
+
+    @FXML
+    private TableColumn<?, ?> colmnQty;
+
+    BranchBO branchBO = (BranchBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.BRANCH);
+
+    BookBO bookBO = (BookBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.BOOK);
+
+    public void initialize(){
+
+    }
+    private void clearFields(){
+
+    }
+
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -95,6 +121,13 @@ public class booksFormController {
 
     @FXML
     void cmbBranchOnAction(ActionEvent event) {
+
+    }
+    private void setData(BookTM row) {
+
+    }
+
+    private void setCellValueFactory() {
 
     }
 

@@ -61,15 +61,16 @@
             <Font size="16.0" />
          </font>
       </Text>
-      <TableView fx:id="tblBooks" layoutX="105.0" layoutY="212.0" prefHeight="459.0" prefWidth="903.0" style="-fx-background-radius: 5;">
+      <TableView fx:id="tblBooks" layoutX="79.0" layoutY="217.0" prefHeight="459.0" prefWidth="997.0" style="-fx-background-radius: 5;">
         <columns>
           <TableColumn fx:id="colmnBookId" prefWidth="119.0" text="Book Id" />
           <TableColumn fx:id="colmnBookName" prefWidth="172.0" text="Book Name" />
-            <TableColumn fx:id="colmnAuthor" prefWidth="179.0" text="Author" />
-            <TableColumn fx:id="colmnGenre" prefWidth="146.0" text="Genre" />
+            <TableColumn fx:id="colmnAuthor" prefWidth="129.66665649414062" text="Author" />
+            <TableColumn fx:id="colmnGenre" prefWidth="195.33334350585938" text="Genre" />
             <TableColumn minWidth="0.0" prefWidth="0.0" text="Qty" />
-            <TableColumn fx:id="colmnBranch" prefWidth="194.0" text="Branch" />
-            <TableColumn fx:id="colmnBranchId" minWidth="0.0" prefWidth="87.0" text="Branch id" />
+            <TableColumn fx:id="colmnBranch" prefWidth="151.33331298828125" text="Branch" />
+            <TableColumn fx:id="colmnBranchId" minWidth="0.0" prefWidth="129.66668701171875" text="Branch id" />
+            <TableColumn fx:id="colmnQty" prefWidth="75.0" text="Qty" />
         </columns>
       </TableView>
       <Button fx:id="btnSaveBook" layoutX="717.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnSaveBookOnAction" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #54a0ff;" text="Save">
@@ -98,5 +99,6 @@
             <Font size="16.0" />
          </font>
       </Text>
+      <Label fx:id="lblBranchName" layoutX="640.0" layoutY="129.0" prefHeight="35.0" prefWidth="94.0" text="Label" />
    </children>
 </AnchorPane>
