@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="685.0" prefWidth="1122.0" style="-fx-background-color: #c3c8db; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserFormController">
    <children>
       <Line endX="981.0" layoutX="125.0" layoutY="62.0" startX="-100.0" />
@@ -48,8 +47,8 @@
          </font>
       </Text>
       <TextField fx:id="txtEmail" layoutX="823.0" layoutY="97.0" onAction="#txtEmailOnAction" prefHeight="35.0" prefWidth="208.0" />
-      <TextField fx:id="txtAddress" layoutX="96.0" layoutY="169.0" onAction="#txtAddressOnAction" prefHeight="35.0" prefWidth="220.0" />
-      <Text layoutX="96.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="62.91015625">
+      <TextField fx:id="txtpassword" layoutX="96.0" layoutY="169.0" onAction="#txtpassworsOnAction" prefHeight="35.0" prefWidth="220.0" />
+      <Text layoutX="96.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="85.0">
          <font>
             <Font size="16.0" />
          </font>
@@ -80,7 +79,7 @@
             <TableColumn fx:id="colmnName" prefWidth="172.0" text="Name" />
             <TableColumn fx:id="colmnPhone" prefWidth="179.0" text="Phone Number" />
             <TableColumn fx:id="colmnEmail" prefWidth="198.0" text="Email" />
-            <TableColumn fx:id="colmnAddress" prefWidth="224.66668701171875" text="Address" />
+            <TableColumn fx:id="colmnAddress" prefWidth="224.66668701171875" text="Password" />
          </columns>
       </TableView>
    </children>

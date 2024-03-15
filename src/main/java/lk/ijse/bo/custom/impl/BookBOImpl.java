@@ -41,4 +41,9 @@ public class BookBOImpl implements BookBO {
     public boolean deleteBook(String id) throws Exception {
         return bookDAO.delete(id);
     }
+
+    @Override
+    public BookDTO search(String id) throws Exception {
+        return null;
+    }
 }
