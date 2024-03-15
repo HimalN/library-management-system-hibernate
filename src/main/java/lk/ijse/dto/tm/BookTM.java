@@ -12,7 +12,8 @@ public class BookTM {
     private String name;
     private String author;
     private String genre;
-    private String branchId;
     private int qty;
+    private String branchId;
+
 
 }

@@ -13,18 +13,22 @@ public class BOFactory {
     }
 
     public enum BOTypes{
-        USER, BRANCH, BOOK
+        LOGIN, USER, BRANCH, BOOK, TRANSACTION
     }
 
     //Object creation logic for BO objects
     public SuperBO getBO(BOTypes types){
         switch (types){
-            case USER:
+            case LOGIN:
                 return new LoginBOImpl();
+            case USER:
+                //return new UserBOImpl();
             case BRANCH:
                 return new BranchBOImpl();
             case BOOK:
                 return new BookBOImpl();
+            case TRANSACTION:
+                //return new TransactionBOImpl();
             default:
                 return null;
         }

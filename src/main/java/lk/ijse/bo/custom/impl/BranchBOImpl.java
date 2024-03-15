@@ -42,5 +42,10 @@ public class BranchBOImpl implements BranchBO {
         return branchDAO.delete(id);
     }
 
+    @Override
+    public BranchDTO search(String id) throws Exception {
+        return null;
+    }
+
 
 }
