@@ -8,9 +8,10 @@ import lombok.*;
 @Setter
 @Getter
 public class Transaction {
-    private String id;
-    private String username;
-    private String email;
-    private String password;
-    private String repeatpassword;
+    private String bId;
+    private String bName;
+    private String genre;
+    private String mId;
+    private String bdate;
+    private String dueDate;
 }
