@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class loginFormController {
 
     @FXML
@@ -34,13 +35,17 @@ public class loginFormController {
         Scene scene =new Scene(rootNode);
         Stage stage = (Stage) this.rootNode.getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("book Worm");
+        stage.setTitle("Book Worm Login");
         stage.centerOnScreen();
     }
 
     @FXML
-    void btnSignUpOnAction(ActionEvent event) {
-
+    void btnSignUpOnAction(ActionEvent event) throws IOException {
+        Parent rootNode = FXMLLoader.load(getClass().getResource("/view/signUpForm.fxml"));
+        Scene scene = new Scene(rootNode);
+        Stage stage = (Stage) this.rootNode.getScene().getWindow();
+        stage.setTitle("Book Worm SignUp");
+        stage.setScene(scene);
     }
 
     @FXML
@@ -53,4 +58,6 @@ public class loginFormController {
 
     }
 
+    public void txtNameOnAction(ActionEvent actionEvent) {
+    }
 }

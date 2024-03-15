@@ -7,7 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class manageBranchController {
+public class UserFormController {
 
     @FXML
     private Button btnClear;
@@ -16,37 +16,46 @@ public class manageBranchController {
     private Button btnDelete;
 
     @FXML
-    private Button btnSaveBranch;
+    private Button btnSaveBook;
 
     @FXML
     private Button btnUpdate;
 
     @FXML
-    private TableColumn<?, ?> colmnBranchId;
-
-    @FXML
-    private TableColumn<?, ?> colmnBranchLocation;
+    private TableColumn<?, ?> colmnAddress;
 
     @FXML
     private TableColumn<?, ?> colmnEmail;
 
     @FXML
-    private TableColumn<?, ?> colmnMobile;
+    private TableColumn<?, ?> colmnId;
+
+    @FXML
+    private TableColumn<?, ?> colmnName;
+
+    @FXML
+    private TableColumn<?, ?> colmnPhone;
 
     @FXML
     private TableView<?> tblBooks;
 
     @FXML
-    private TextField txtBranchId;
+    private TextField txtAddress;
 
     @FXML
     private TextField txtEmail;
 
     @FXML
-    private TextField txtLocation;
+    private TextField txtName;
+
+    @FXML
+    private TextField txtPhone;
 
     @FXML
     private TextField txtSearch;
+
+    @FXML
+    private TextField txtUserId;
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -59,7 +68,7 @@ public class manageBranchController {
     }
 
     @FXML
-    void btnSaveBranchOnAction(ActionEvent event) {
+    void btnSaveOnAction(ActionEvent event) {
 
     }
 
@@ -69,7 +78,7 @@ public class manageBranchController {
     }
 
     @FXML
-    void txtBranchIdOnAction(ActionEvent event) {
+    void txtAddressOnAction(ActionEvent event) {
 
     }
 
@@ -79,7 +88,12 @@ public class manageBranchController {
     }
 
     @FXML
-    void txtLocationOnAction(ActionEvent event) {
+    void txtNameOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void txtPhoneOnAction(ActionEvent event) {
 
     }
 
@@ -87,4 +101,10 @@ public class manageBranchController {
     void txtSearchOnAction(ActionEvent event) {
 
     }
+
+    @FXML
+    void txtUserIdOnAction(ActionEvent event) {
+
+    }
+
 }
